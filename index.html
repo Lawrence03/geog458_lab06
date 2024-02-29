@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>COVID-19 Cases in the United States</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/c3.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <script src="js/d3.js"></script>
+    <script src="js/c3.min.js"></script>
+</head>
+
+<body>
+    <div id="info">
+        <div id="title">
+            COVID-19 Cases in the United States
+            <span id="reset"><a href="#">Reset View</a></span>
+        </div>
+        <div id="count" class="card">
+            <h5 id="desc"> # County in the displaying region</h5>
+            <p id="covidCases-count"></p>
+        </div>
+        <div id="case" class="card">
+            <h5 id="desc"> # Cases in the displaying region</h5>
+            <p id="covidCasesNum-count"></p>
+        </div>
+        <div id="death" class="card">
+            <h5 id="desc"> # Deaths in the displaying region</h5>
+            <p id="covidCasesDeath-count"></p>
+        </div>
+        <div id="covidCases-chart"></div>
+        <div id="footer">
+            This map is a visualization of COVID-19 cases in the United States. The data is from the New York Times, based on reports from state and local health agencies. Users can click on a circle, representing a county, to see the number of cases and deaths in that county. The size of the circle represents the number of cases in the county.
+        </div>
+    </div>
+    <div id="map"></div>
+    <div id="legend"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

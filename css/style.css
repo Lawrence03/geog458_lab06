@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', serif;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#info {
+  z-index: 1000;
+  position: absolute;
+  width: 400px;
+  top: 1%;
+  bottom: 1%;
+  left: .5%;
+  padding: 40px 15px 900px 15px;
+  background: #343a40;
+  color: white;
+
+}
+
+#title {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#title span {
+  font-size: 14px;
+  float: right;
+  margin-right: 10px;
+}
+
+#desc {
+  text-align: center;
+  color: lightgray;
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+#covidCases-count, #covidCasesDeath-count, #covidCasesNum-count {
+  margin: 0;
+  text-align: center;
+  color: orange;
+  font-size: 30px;
+}
+
+#covidCases-chart {
+  top: 20px;
+}
+
+
+#footer {
+  position: absolute;
+  bottom: 150px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  font-size: 15px;
+  line-height: 130%;
+  color: lightgray;
+}
+
+
+#legend {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgb(128, 128, 128);
+  border-radius: 3px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 18px;
+  margin-bottom: 40px;
+  width: 140px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.break {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dot {
+  display: inline-block;
+  margin-top: 5px;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.dot-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-style: italic;
+}
+
+text {
+  fill: gray
+}
+
+.tick line {
+  stroke: gray;
+}
+
+.c3-axis path {
+  stroke: gray;
+}
+
+.name,
+.value {
+  background-color: black;
+  color: black
+}
